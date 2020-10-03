@@ -55,6 +55,10 @@ export default function Authentication(props) {
 
   useEffect(() => {
     const ubsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (props.setAuthUser) {
+        props.setAuthUser(authUser);
+      }
+
       if (authUser) {
         // user has logged in
         setOpen(null);
