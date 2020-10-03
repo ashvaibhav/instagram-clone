@@ -5,13 +5,15 @@
 .app {
   background-color: #fafafa;
   height: 100vh;
-  margin: 0px 20px;
 }
-.app__header {
-  background-color: white;
-  padding: 20px;
-  border-bottom: 1px solid light-gray;
-  object-fit: contain;
+
+.app__content {
+  margin: auto;
+  max-width: 80%;
 }
-app__headerImage {
+
+@media (max-width: 1000px) {
+  .app__content {
+    max-width: 90%;
+  }
 }

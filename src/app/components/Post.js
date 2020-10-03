@@ -27,10 +27,12 @@ export default class Post extends Component {
             </a>
           </div>
           <div className="post__content">
-            <img alt={post.imageDescription} src={post.image} />
+            {!post.image ? null : (
+              <img alt={post.imageDescription} src={post.image} />
+            )}
           </div>
           <section className="post__description">
-            <strong>{user.username}:</strong>
+            <strong>{user.username}</strong>
             {post.caption}
           </section>
         </div>

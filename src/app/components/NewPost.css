@@ -1,0 +1,36 @@
+.new_post {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+  .new_post {
+    margin-top: 5px;
+  }
+}
+.new_post .new_post__progress {
+  display: none;
+}
+
+.new_post.uploading .new_post__progress {
+  display: block;
+}
+
+.new_post__caption {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new_post__controls {
+  display: flex;
+  justify-content: space-between;
+}

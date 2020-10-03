@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Instagram.css";
-import Post from "../components/Post";
+import "./Feed.css";
+import Post from "./Post";
 
 export default function Feed(props) {
   const posts = props.posts;
