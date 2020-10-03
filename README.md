@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Created with Firebase (Firestore, Storage, Auth) and React inspired by CleverProgrammer.
 
 ## Available Scripts
 
